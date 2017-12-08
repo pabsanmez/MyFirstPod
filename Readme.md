@@ -1,42 +1,44 @@
-#Para comprobar si el Podspec es correcto.
+# Como crear un CocoaPod.
+## Private CocoaPod.
 
+1. Comprobamos si el Podspec no tiene errores.
+```
 pod spec lint YourPod.podspec --verbose
-
-#Para subirlo a CocoaPods
-
-pod trunk register <YUOREMAIL> ‘<YOUR NAME>’ — description=’owner from macbook pro’
-
-#Hacer Click en el email que hemos recibido y a continuación:
-
-pod trunk push YourPod.podspec
-
-
-#Para hacerlo en Private
-
-#Crear un tag 
-
-git tag 0.1
-
-#Pushearlo
-
-git push -u origin —- tags
-o
+```
+2. Realizamos los commits oportunos, aumentamos el s.version del .podspec. Generamos un nuevo tag y lo pusheamos.
+```
+git tag x.y.z
 git push -u origin master --tags
+```
 
-#Añadimos nuestro repositorio.
+3. Creamos un git con que va a contener todos los podspecs que vamos a utilizar. (Solo la primera vez).
+```
+pod repo add pabsanmez-specs https://github.com/pabsanmez/pabsanmez-specs.git
+````
 
-pod repo add <yourSpecsName> <yourPodRepoDirectory>
-e.g. 
-pod repo add MyFirstPod https://github.com/pabsanmez/MyFirstPod.git
+4. Hacemos un push de la ultima version de nuestro podspec al repositorio que utiliza nuestro repositorio.
+```
+pod repo push pabsanmez-specs MyFirstPod.podspec
+```
+5.  En los proyectos que vamos a utilizar nuestro nuevo pod les indicaremos el repositorio del cual se va a obtener el podspec que apunta al nuevo pod.
+```
+source 'https://github.com/pabsanmez/pabsanmez-specs.git'
+```
+6.  Finalmente añadimos el pod a su podfile.
+```
+pod 'MyFirstPod', '~> x.y.z'
+```
 
+Para una informacion mas detallada [Raywenderlich tutorial](https://www.raywenderlich.com/99386/create-cocoapod-swift).
 
-#Validamos
+## Public CocoaPod.
 
-pod repo push myspec MOHUD.podspec — verbose
-
-#Añadimos el source en el podfile que vayamos a utilizar nuestro pod.
-
-source "https://bitbucket.org/moath_torch/mospecs/"
-
-
+**No se ha comprobado su correcto funcionamiento**
+```
+pod trunk register <YUOREMAIL> '<YOUR NAME>' — description='owner from macbook pro'
+```
+Recibiremos un email. Confirmar el correo recibido y ejecutar el siguiente comando.
+```
+pod trunk push YourPod.podspec
+```
 
