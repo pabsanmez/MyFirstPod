@@ -16,7 +16,7 @@ s.summary = "Learning."
 s.requires_arc = true
 
 # 2
-s.version = '0.14.0'
+s.version = '0.15.0'
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
@@ -38,7 +38,7 @@ s.dependency 'MBProgressHUD', '~> 1.1.0'
 s.source_files = "MyFirstPod/**/*.{swift}"
 
 # 9
-s.resources = "MyFirstPod/**/*.{png,jpeg,jpg,storyboard,xib}"
+#s.resources = "MyFirstPod/**/*.{png,jpeg,jpg,storyboard,xib}"
 end
 
 #s.exclude_files = "MyFirstPod/Exclude"
