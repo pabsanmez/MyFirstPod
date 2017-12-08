@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		222C7A2F1FDB1D7200095BA6 /* MyFirstPod.h in Headers */ = {isa = PBXBuildFile; fileRef = 222C7A2D1FDB1D7200095BA6 /* MyFirstPod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		223BA16A1FDB2F8B007EB88B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223BA1691FDB2F8B007EB88B /* StringExtension.swift */; };
-		22D5E6DD1FDB33AA007449B2 /* pablo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22D5E6DC1FDB33AA007449B2 /* pablo.jpg */; };
 		F874C187081E544C8F7D7F20 /* Pods_MyFirstPod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ED479775FBDC2D96988E58A /* Pods_MyFirstPod.framework */; };
 /* End PBXBuildFile section */
 
@@ -19,7 +18,6 @@
 		222C7A2E1FDB1D7200095BA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		223BA1681FDB21FC007EB88B /* MyFirstPod.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = MyFirstPod.podspec; sourceTree = "<group>"; };
 		223BA1691FDB2F8B007EB88B /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
-		22D5E6DC1FDB33AA007449B2 /* pablo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pablo.jpg; sourceTree = "<group>"; };
 		28D0CF3A908A6F9A2F0E408E /* Pods-MyFirstPod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFirstPod.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFirstPod/Pods-MyFirstPod.debug.xcconfig"; sourceTree = "<group>"; };
 		5D3E47FD107B14D060592109 /* Pods-MyFirstPod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFirstPod.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyFirstPod/Pods-MyFirstPod.release.xcconfig"; sourceTree = "<group>"; };
 		9ED479775FBDC2D96988E58A /* Pods_MyFirstPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFirstPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,20 +57,11 @@
 		222C7A2C1FDB1D7200095BA6 /* MyFirstPod */ = {
 			isa = PBXGroup;
 			children = (
-				223BA16B1FDB2FD3007EB88B /* Resources */,
 				222C7A2D1FDB1D7200095BA6 /* MyFirstPod.h */,
 				222C7A2E1FDB1D7200095BA6 /* Info.plist */,
 				223BA1691FDB2F8B007EB88B /* StringExtension.swift */,
 			);
 			path = MyFirstPod;
-			sourceTree = "<group>";
-		};
-		223BA16B1FDB2FD3007EB88B /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				22D5E6DC1FDB33AA007449B2 /* pablo.jpg */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		BDE130BFEE6E8A2B602D40A9 /* Pods */ = {
@@ -164,7 +153,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22D5E6DD1FDB33AA007449B2 /* pablo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
