@@ -40,3 +40,5 @@ s.source_files = "MyFirstPod/**/*.{swift}"
 # 9
 s.resources = "MyFirstPod/**/*.{png,jpeg,jpg,storyboard,xib}"
 end
+
+#s.exclude_files = "MyFirstPod/Exclude"
