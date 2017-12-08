@@ -20,6 +20,8 @@ git tag 0.1
 #Pushearlo
 
 git push -u origin —- tags
+o
+git push -u origin master --tags
 
 #Añadimos nuestro repositorio.
 
