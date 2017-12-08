@@ -27,7 +27,8 @@ git push -u origin master --tags
 
 pod repo add <yourSpecsName> <yourPodRepoDirectory>
 e.g. 
-pod repo add myspec https://bitbucket.org/moath/mospecs
+pod repo add MyFirstPod https://github.com/pabsanmez/MyFirstPod.git
+
 
 #Validamos
 
